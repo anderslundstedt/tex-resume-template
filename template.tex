@@ -1,36 +1,41 @@
 \documentclass[a4paper]{article}
+% LENGTHS---ADJUST THESE TO GET BETTER PAGE BREAKS
+\newlength{\PARSKIP}\setlength{\PARSKIP}{1em}
+\newlength{\ITMSEP}\setlength{\ITMSEP}{0.5em}
+\newlength{\LASTUPDATESEP}\setlength{\LASTUPDATESEP}{1em}
+\setlength{\footnotesep}{0.75\baselineskip}
+\newlength{\BEFOREHEADER}\setlength{\BEFOREHEADER}{\PARSKIP}
+\newlength{\AFTERHEADER}\setlength{\AFTERHEADER}{0.5\PARSKIP}
 % PACKAGES
 \usepackage{enumitem}
 \usepackage[concrete]{fontsetup}
 \usepackage[hang,perpage,symbol*]{footmisc}
 \usepackage{microtype}
-\usepackage[skip=1em]{parskip}
+\usepackage[skip=\PARSKIP]{parskip}
 \usepackage{showframe}
 \usepackage{tabularx}
+\usepackage{titlesec}
 \usepackage{xurl}
 \usepackage[colorlinks,allcolors=blue]{hyperref}
+% VERTICAL SPACE BEFORE AND AFTER HEADERS
+\titlespacing*{\subsection}{0pt}{\BEFOREHEADER}{\AFTERHEADER}
 % ENUMERATION SETTINGS
 \setlist[itemize]{leftmargin=*,align=left,labelsep=0.4cm,label=--}
 \setlist[description]{leftmargin=*}
-\setlist{parsep=0.7em}
-% VERTICAL FOOTNOTE SEPARATION
-\setlength{\footnotesep}{0.75\baselineskip}
+\setlist{parsep=\ITMSEP}
 % ENVIRONMENT ITEMIZE WITH ADJUSTED VERTICAL SPACE BEFORE
 \newenvironment{ITEMIZE}{\vspace{-\topsep}\begin{itemize}}{\end{itemize}}
 % BEGIN DOCUMENT
 \begin{document}
 % SEC: CHARLES PROTEUS STEINMETZ
 \section*{Charles Proteus Steinmetz}
-% VSPACE BEFORE LAST UPDATE---ADJUST THIS TO GET BETTER PAGE BREAKS
 % also possible to adjust the skip option to parskip package
 % also possible to adjust the vertical enumeration spacing
 \vspace{1em}
 % LAST UPDATE
+\vspace{\LASTUPDATESEP}
 Last update:\@ \today{}%
-% VSPACE AFTER LAST UPDATE---ADJUST THIS TO GET BETTER PAGE BREAKS
-% also possible to adjust the skip option to parskip package
-% also possible to adjust the vertical enumeration spacing
-\vspace{1em}
+\vspace{\LASTUPDATESEP}
 % SUBSEC: BASIC INFO
 \subsection*{Basic info}
 %
