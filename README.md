@@ -1,0 +1,2 @@
+- Compile with XeLaTeX.
+- Remove `\usepackage{showframe}` to remove frames.
