@@ -1,0 +1,131 @@
+\documentclass[a4paper]{article}
+% PACKAGES
+\usepackage{enumitem}
+\usepackage[concrete]{fontsetup}
+\usepackage[hang,perpage,symbol*]{footmisc}
+\usepackage{microtype}
+\usepackage[skip=1em]{parskip}
+\usepackage{showframe}
+\usepackage{tabularx}
+\usepackage{xurl}
+\usepackage[colorlinks,allcolors=blue]{hyperref}
+% ENUMERATION SETTINGS
+\setlist[itemize]{leftmargin=*,align=left,labelsep=0.4cm,label=--}
+\setlist[description]{leftmargin=*}
+\setlist{parsep=0.7em}
+% VERTICAL FOOTNOTE SEPARATION
+\setlength{\footnotesep}{0.75\baselineskip}
+% ENVIRONMENT ITEMIZE WITH ADJUSTED VERTICAL SPACE BEFORE
+\newenvironment{ITEMIZE}{\vspace{-\topsep}\begin{itemize}}{\end{itemize}}
+% BEGIN DOCUMENT
+\begin{document}
+% SEC: CHARLES PROTEUS STEINMETZ
+\section*{Charles Proteus Steinmetz}
+% VSPACE BEFORE LAST UPDATE---ADJUST THIS TO GET BETTER PAGE BREAKS
+% also possible to adjust the skip option to parskip package
+% also possible to adjust the vertical enumeration spacing
+\vspace{1em}
+% LAST UPDATE
+Last update:\@ \today{}%
+% VSPACE AFTER LAST UPDATE---ADJUST THIS TO GET BETTER PAGE BREAKS
+% also possible to adjust the skip option to parskip package
+% also possible to adjust the vertical enumeration spacing
+\vspace{1em}
+% SUBSEC: BASIC INFO
+\subsection*{Basic info}
+%
+\begin{tabularx}{\textwidth}{@{}lX}
+     \textbf{Full name}  & Charles Proteus Steinmetz
+  \\ \textbf{Birth year} & 1865
+  \\ \textbf{Location}   & Schenectady, New York, United States
+  \\ \textbf{Website}    & \url{https://en.wikipedia.org/wiki/Charles_Proteus_Steinmetz}
+\end{tabularx}
+% SUBSEC: EXPERIENCE
+\subsection*{Experience\footnote{References provided upon request.}}
+%% UNION COLLEGE
+\textbf{1914--1923}                                             \\
+Union College                                                   \\
+\textit{Faculty member at the School of Electrical Engineering} \\
+I worked pro bono as teacher and researcher.
+%% PAR BREAK
+\par
+%% GEC
+\textbf{1890--1923}      \\
+General Electric Company \\
+\textit{Engineer, Researcher, Consultant}
+%% PAR BREAK
+\par
+%% FORD
+\textbf{1920 (approximately)\footnote{%
+  It was a long time ago. I do not remember the exact year.
+}}                                                             \\
+Ford (consultant)                                              \\
+\textit{Chalk marker, Itemizer}                                \\
+I worked mainly with ladders and chalk. I also itemized a bill.
+%% PAR BREAK
+\par
+%% UNION COLLEGE
+\textbf{1902--1913}                                    \\
+Union College                                          \\
+\textit{Chair of the School of Electrical Engineering} \\
+In addition to my duties as chair, I worked pro bono as teacher and researcher.
+%% PAR BREAK
+\par
+%% EICKEMEYER
+\textbf{1889--1891}                           \\
+Eickemeyer \& Osterheld Manufacturing Company \\
+\textit{Engineer, Researcher}
+% SUBSEC: EDUCATION
+\subsection*{Education}
+%% PHD STUDENT
+\textbf{1883--1888\footnote{%
+  Due to political reasons, I did not receive my degree until 1903, and when I
+  did it was from Union University.%
+}}                                                                            \\
+University of Breslau                                                         \\
+\textit{PhD}                                                                  \\
+Thesis:\@ \textit{%
+  On Involuntary Self-reciprocal Correspondences in Space Which Are Defined by a
+  Three-Dimensional Linear System of Surfaces of the $n$th Order%
+}
+%% PAR BREAK
+\par
+%% ST. JOHN'S GYMNASIUM
+\textbf{1873--1882}  \\
+St. John's Gymnasium \\
+\textit{Honors student}
+% SUBSEC: MAIN COMPETENCES
+\subsection*{Main competences}
+\begin{ITEMIZE}
+  \item%
+  Chalk
+  \item%
+  Itemizing
+  \item%
+  Mathematics
+  \item%
+  Engineering
+  \item%
+  Research
+\end{ITEMIZE}
+% SUBSEC: LANGUAGES
+\subsection*{Languages}
+\begin{ITEMIZE}
+  \item%
+  German\\
+  mother tongue
+  \item%
+  English\\
+  fluent
+  \item%
+  Latin\\
+  fluent
+  \item%
+  French\\
+  fluent
+  \item%
+  Greek\\
+  fluent
+\end{ITEMIZE}
+% END DOCUMENT
+\end{document}
