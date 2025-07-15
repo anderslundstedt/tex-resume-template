@@ -1,6 +1,6 @@
 \documentclass[a4paper]{article}
 % LENGTHS---ADJUST THESE TO GET BETTER PAGE BREAKS
-\newlength{\PARSKIP}\setlength{\PARSKIP}{1.2em}
+\newlength{\PARSKIP}\setlength{\PARSKIP}{1.4em}
 \newlength{\ITMSEP}\setlength{\ITMSEP}{0.5em}
 \newlength{\LASTUPDATESEP}\setlength{\LASTUPDATESEP}{1em}
 \setlength{\footnotesep}{0.75\baselineskip}
@@ -18,7 +18,9 @@
 \usepackage{xurl}
 \usepackage[colorlinks,allcolors=blue]{hyperref}
 % VERTICAL SPACE BEFORE AND AFTER HEADERS
+\titlespacing*{\section}{0pt}{\BEFOREHEADER}{\AFTERHEADER}
 \titlespacing*{\subsection}{0pt}{\BEFOREHEADER}{\AFTERHEADER}
+\titlespacing*{\subsubsection}{0pt}{\BEFOREHEADER}{\AFTERHEADER}
 % ENUMERATION SETTINGS
 \setlist[itemize]{leftmargin=*,align=left,labelsep=0.4cm,label=--}
 \setlist[description]{leftmargin=*}
@@ -29,9 +31,6 @@
 \begin{document}
 % SEC: CHARLES PROTEUS STEINMETZ
 \section*{Charles Proteus Steinmetz}
-% also possible to adjust the skip option to parskip package
-% also possible to adjust the vertical enumeration spacing
-\vspace{1em}
 % LAST UPDATE
 \vspace{\LASTUPDATESEP}
 Last update:\@ \today{}%
